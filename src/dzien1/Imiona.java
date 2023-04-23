@@ -15,12 +15,9 @@ public class Imiona {
 
                 break;
             }
-//
-//            if (names[aktualnyIndex].equals(szukaneImie)) {
-//                ilerazy++;
         }
         System.out.println("szukane imie Jan jest na tym miejscu: " + szukanyIndex);
-
+        System.out.printf("szukane imie %s jest na tym miejscu: %s ",szukaneImie,szukanyIndex);
         //  System.out.println("w tablicy znalazlem imie " + szukaneImie+ " " + ilerazy + " razy");
         //  System.out.printf("w tablicy znalazlem imie %s %s razy",szukaneImie,ilerazy);
 
