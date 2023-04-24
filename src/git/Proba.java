@@ -18,5 +18,8 @@ public class Proba {
         String x = names.get(3);
         System.out.println("imie pod tym indexem to: " + x);
 
+        int index = names.indexOf("Arek");
+        System.out.println("pod imieniem Arek jest indeks: " + index);
+
     }
 }
