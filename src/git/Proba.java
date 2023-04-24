@@ -18,5 +18,10 @@ public class Proba {
         String x = names.get(3);
         System.out.println("imie pod tym indexem to: " + x);
 
+        names.addAll(List.of("Maciek", "Adam"));
+
+        int maciek = names.indexOf("Maciek");
+        System.out.println("Maciek jest pod indexem: " + maciek);
+
     }
 }
