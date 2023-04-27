@@ -24,7 +24,7 @@ public class Mapa {
         groceries.put("Milk", 1);
         groceries.put("Water", 1);
         //wartosc moze sie powtarzac, klucz nie
-        groceries.put("Cookies", 5);
+        groceries.put("Cookies", 11111115);
 
 
         //iterate over each map entry
