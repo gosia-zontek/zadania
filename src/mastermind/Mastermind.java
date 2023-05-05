@@ -69,7 +69,7 @@ public class Mastermind {
                     }
                 }
             }
-            System.out.print(" Uzyskales tyle punktow:   " + result);
+            System.out.print(" Uzyskales tyle punktow :   " + result);
             result.clear();
             if (zliczanieProby == 5) {
                 System.out.println(" Proby sie skonczyly");
