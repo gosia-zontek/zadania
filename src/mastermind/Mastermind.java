@@ -1,5 +1,6 @@
 package mastermind;
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -21,44 +22,63 @@ public class Mastermind {
         // średni - 4 cyfry, trudny - 5 cyfer) oraz ilości "żyć" - jeżeli użytkownik
         // nie odgadnie kombinacji np w 5 próbach, przegrywa.
 
-        //1. komputer losuje 3 cyfry
-        //2. uzytkownik je odgaduje i wpisuje w linii
-
-
-        //losowanie trzech liczb i ich wyswietlanie
-        Random r = new Random();
-     //   int[] numbers = new int[4];
+        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+        int[] wylosowaneLiczby = new int[4];
         for (int i = 0; i < 3; i++) {
-          //  int zmienna = numbers[3];
-          //  int numbers = tablica[3];
-            System.out.println(r.nextInt(10));
-          //  System.out.println("poka" + zmienna);
+            wylosowaneLiczby[i] = random.nextInt(10);
+            System.out.println(wylosowaneLiczby[i]);
+        }
+        int zliczanieProby = 0;
+
+        int[] zgadywanieLiczb = new int[4];
+
+        ArrayList<String> result = new ArrayList<>();
+        boolean winner = false;
+
+        System.out.println("Welcome to Mastermind!");
+
+        while (zliczanieProby < 5) {
+            zliczanieProby++;
+            int position = 1;
+
+
+            System.out.println(" Proba " + zliczanieProby);
+
+            for (int i = 0; i < 3; i++) {
+                System.out.println("Position " + position++ + "");
+                zgadywanieLiczb[i] = scanner.nextInt();
+
+            }
+            int Hot_count = 0;
+            int Warm_count = 0;
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    if (zgadywanieLiczb[i] == wylosowaneLiczby[j] && i == j) {
+                        Warm_count = Warm_count + 1;
+                        result.add(String.valueOf(Warm_count));
+                        System.out.println("trafiona cyfra to: " + zgadywanieLiczb[i]);
+
+                    }
+
+                    if (zgadywanieLiczb[i] == wylosowaneLiczby[j] && i != j) {
+                        Hot_count = Hot_count + 1;
+                        result.add(String.valueOf(Hot_count));
+                        System.out.println("w złym miejscu: " + zgadywanieLiczb[i]);
+                        break;
+                    }
+                }
+            }
+            System.out.print(" Uzyskales tyle punktow:   " + result);
+            result.clear();
+            if (zliczanieProby == 5) {
+                System.out.println(" Proby sie skonczyly");
+                break;
+            }
+            for (int i = 0; i < 4; i++) {
+                System.out.print(wylosowaneLiczby[i] + " ");
+            }
+
         }
     }
-    public static void calculator(String result) {
-        String message = "";
-        Float firstNumber = getNumber("first");
-        Float secondNumber = getNumber("second");
-        Float thirdNumber = getNumber("third");
-
-       // Float result = numbers(firstNumber, secondNumber, thirdNumber);
-
-        if (result == null) {
-            message = "Oops, something went wrong...";
-        } else {
-            message = "Result:  " + firstNumber + " " + secondNumber+ " "  +thirdNumber + " " +  result;
-        }
-        System.out.println(message);
-       // displayMessage(message);
-    }
-    public static Float getNumber(String text) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter the " + text + " number: ");
-        return input.nextFloat();
-    }
-
 }
-// int losowanieLiczby = r.nextInt(10);
-//   System.out.println("losowane liczby to" + losowanieLiczby);}}
-
-
