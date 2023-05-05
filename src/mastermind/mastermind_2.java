@@ -72,13 +72,13 @@ public class  mastermind_2 {
                 break;
             }
 
-            System.out.print(" Your score is as follows:   " + result);
+            System.out.print(" Uzyskales tyle punktow:   " + result);
 
             result.clear();
 
             if (zliczanieProby == 5) {
-                System.out.println(" Unfortunately you didn't guess my code. ");
-                System.out.println(" Code: ");
+                System.out.println("  Nie zgadles kodu.");
+                System.out.println(" Kod: ");
                 break;
             }
 
