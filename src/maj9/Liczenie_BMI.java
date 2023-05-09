@@ -17,12 +17,12 @@ public class Liczenie_BMI {
         System.out.println("podaj swoj wzrost ");
         int height = scanner.nextInt();
         //musi byc napisana literka f - bo int nie przechowuje wartosci zmiennoprzecinkowej
-        float BMI = (weight / ((height / 100f) * (height / 100f)));
+        float bMI = (weight / ((height / 100f) * (height / 100f)));
         //albo float bmi = weight/(height*height*0.0001f);
 
-        System.out.println("Twoje BMI wynosi " + BMI);
+        System.out.println("Twoje BMI wynosi " + bMI);
 
-        if (BMI > 18.5f || BMI < 24.9f) {
+        if (bMI > 18.5f || bMI < 24.9f) {
             System.out.println("Twoje BMI jest optymalne");
         } else {
             System.out.println("BMI nieoptymalne");
