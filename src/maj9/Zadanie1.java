@@ -11,10 +11,10 @@ public class Zadanie1 {
 
         Scanner s = new Scanner(System.in);
         System.out.println("Please give the diameter of the circle: ");
-        Float diameter = s.nextFloat();
+        float diameter = s.nextFloat();
         double pi = 3.14;
-        Float circumference1 = (float) (diameter * pi);
-        Float circumference = (float) (2.0 * Math.PI * (diameter/2.0));
+        float circumference1 = (float) (diameter * pi);
+        float circumference = (float) (2.0 * Math.PI * (diameter/2.0));
         String input = s.nextLine();
 
         System.out.println("Obwod to " + circumference);
