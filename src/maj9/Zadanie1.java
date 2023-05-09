@@ -20,8 +20,6 @@ public class Zadanie1 {
 //        System.out.println("Obwod to " + circumference);
 //        System.out.println("Obwod to " + circumference1);
 
-
-
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Podaj srednice okregu ");
