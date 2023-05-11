@@ -31,5 +31,27 @@ public class Zadanie_4 {
 
             }
         }
-    }
-}
+    }}
+    //2 wersja
+//    public static void main(String[] args) {
+//        Scanner s = new Scanner(System.in);
+//        System.out.println("podaj dodatnia liczbe calkowita");
+//        int number = s.nextInt();
+//        int startNumber = 0;
+//
+//        while (startNumber < number) {
+//            startNumber++;
+//            if (startNumber % 3 == 0 && startNumber % 7 == 0) {
+//                System.out.println("Pif paf");
+//            } else if (startNumber % 7 == 0) {
+//                System.out.println("paf");
+//            } else if (startNumber % 3 == 0) {
+//                System.out.println("pif");
+//            } else System.out.println(startNumber);
+//        }
+//    }
+//}
+//    public static void main(String[] args) {
+//        System.out.println(" to sie wypisze w nowej linii ");
+//        System.out.print("text 1 ");
+//    }}
