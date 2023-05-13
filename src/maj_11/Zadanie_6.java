@@ -12,11 +12,14 @@ public class Zadanie_6 {
 
         float czesc;
         float wynik = 0;
+        if (number <= 0) System.out.println("to nie jest liczba naturalna");
+
+
         for (int i = 1; i <= number; i++) {
-           // czesc = 1f/(i);
-             czesc = (float) (1.0/(i));
+            // czesc = 1f/(i);
+            czesc = (float) (1.0 / (i));
             System.out.println(String.format("%.2f", czesc));
-           wynik += 1/i;
+            wynik += 1 / i;
             System.out.println(wynik);
 
 

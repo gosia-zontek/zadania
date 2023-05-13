@@ -18,8 +18,6 @@ public class Zadanie_5 {
             System.out.println("2");
         }
         for (int i = 3; i < number; i++) {
-            //  System.out.println(i);
-            // if (number % 2 == 0 || number % 3 == 0 || number % 5 == 0 || number % 7 == 0) {
             for (int j = 2; j <= i; j++) {
                 if (i % j == 0) {
                     System.out.println("");
