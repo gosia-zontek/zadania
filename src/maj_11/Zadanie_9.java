@@ -99,3 +99,24 @@ public class Zadanie_9 {
             }
         }
     }
+
+//    public static void main(String[] args) {
+//        Scanner s = new Scanner(System.in);
+//        int number = s.nextInt();
+//        String firstLine= "*      *";
+//        String secondLine=" *    * ";
+//        String thirdLine= "  *  *  ";
+//        String fourthLine="   **   ";
+//
+//
+//        for (int i = 0; i < 4*number; i++) {
+//            if (i<number) System.out.print(firstLine);
+//            else if (i==number) {System.out.println();System.out.print(secondLine);}
+//            else if (i<2*number) {System.out.print(secondLine);}
+//            else if (i==2*number) {System.out.println();System.out.print(thirdLine);}
+//            else if (i < 3*number) {System.out.print(thirdLine);}
+//            else if (i==3*number) {System.out.println();System.out.print(fourthLine);}
+//            else if (i < 4*number){System.out.print(fourthLine);}
+//        }
+//    }
+//}
