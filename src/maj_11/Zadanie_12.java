@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Zadanie_12 {
     public static void main(String[] args) {
-<<<<<<< HEAD
+
         String text = getUserText();
         String textWithoutSpaces = getTextWithoutSpaces(text);
         double allCharacters = text.length();
@@ -33,14 +33,3 @@ public class Zadanie_12 {
         return result;
     }
 }
-=======
-        //Napisz program, ktory pobierze od uzytkownika tekst (zmienna String)
-        //i policzy jakim procentem wszystkich znakow tekstu byl znak spacji
-        //czyli liczba spacji/liczba wszystkich znakow *100%
-
-        Scanner scanner = new Scanner(System.in);
-        String text = scanner.nextLine();
-
-    }
-}
->>>>>>> origin/main
